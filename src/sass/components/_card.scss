@@ -1,0 +1,33 @@
+.card {
+    padding: 5rem;
+    transition: all .3s;
+    &:hover {
+        transform: translateY(-5rem);
+    }
+    &-container {
+        padding: 4rem;
+        background-color: $color-red-light;
+        color: $color-white;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    &-image {
+        width: 100%;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        outline: none;
+        border-bottom: none;
+        display: block;
+
+    }
+    &-heading {
+        text-align: center;
+        font-size: 2.9rem;
+        padding: 2rem;
+
+    }
+    &-body__text {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}

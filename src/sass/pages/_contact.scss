@@ -1,0 +1,70 @@
+.contact-section {
+    &-container {
+        background-color: $color-grey;
+        height: 140vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        &__sub {
+            &--heading {
+                font-size: 5rem;
+                text-align: left;
+                color: $color-white;
+            }
+            &__form {
+                &--heading {
+                    color: $color-white;
+                    font-size: 3rem;
+                    text-align: center;
+                    padding: 1rem;
+                }
+                &--input-control {
+                    margin-top: 2rem;
+                    display: flex;
+                    &--input:not(:last-child){
+                        margin-right: 2rem;
+                    }
+                    &--input {
+                        padding: 1.2rem;
+                        background-color: $color-black-light;
+                        color: $color-white;
+                        outline: none;
+                        border: none;
+                        font-size: 1.6rem;
+                        &::placeholder {
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                    }
+                    &--textarea {
+                        height: 15rem;
+                        padding: 1.3rem;
+                        background-color: $color-black-light;
+                        color: $color-white;
+                        outline: none;
+                        border: none;
+                        font-size: 1.6rem;
+                        resize: none;
+
+                        &::placeholder {
+                            font-family: 'Montserrat', sans-serif;
+                        }
+                    }
+                }
+                &--btn-control {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+                    &--button {
+                        border: none;
+                        cursor: pointer;
+                        padding: 1.5rem;
+                        &:active, &:focus {
+                            outline: none
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

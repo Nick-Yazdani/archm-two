@@ -1,0 +1,39 @@
+.section-about {
+    &__overlay {
+        background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)), url('../../pages/About/images/about.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        &--heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: $color-white;
+            &-caption {
+                font-size: 7rem;
+            }
+            &-subtext {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+.section-details {
+    background-color: rgba($color-black, 0.9);
+    color: $color-white;
+    &__container {
+        margin: 0 30rem;
+        padding: 10rem;
+        &--heading {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        &--paragraph {
+            font-size: 2rem;
+        }
+    }
+}

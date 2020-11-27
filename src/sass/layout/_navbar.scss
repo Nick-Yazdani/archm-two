@@ -1,0 +1,101 @@
+.header {
+    height: 10vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    transition: background 0.7s;
+    z-index: 9999;
+    &-nav {
+        display: flex;
+        height: 100%;
+        margin: 0 30rem;
+        justify-content: space-between;
+        align-items: center;
+        &__logo {
+              &--text {
+                  display: inline-block;
+                  font-size: 3rem;
+                  &--link {
+                      display: inline-block;
+                      text-decoration: none;
+                      &:active, &:link, &:visited {
+                          color: $color-white;
+                      }
+                  }
+              }  
+        }
+        &-container {
+            height: 100%;
+            &__list {
+                display: flex;
+                list-style-type: none;
+                height: 100%;
+                align-items: center;
+                &--item {
+                    font-size: 1.4rem;
+                    height: 100%;
+                    &--link {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        height: 100%;
+                        padding: 3rem;
+                        margin: 0 .5rem;
+                        &:active, &:link, &:visited {
+                            color: $color-white;
+                        }
+                        &::before, &::after {
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            bottom: 0;
+                            margin-top: -0.5px;
+                            width: 0%;
+                        }
+                        &::before {
+                            left: -2.5px;
+                            background: $color-red-light;
+                            transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+                            opacity: 0;
+                        }
+                        &::after {
+                            right: 2.5px;
+                            background: $color-red-light;
+                            transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+                        }
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                                opacity: 1;
+                            }
+                            &::after {
+                                width: 100%;
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-progress__container {
+        width: 100%;
+        background-color: transparent;
+        height: 10vh;
+        display: flex;
+        align-items: flex-end;
+        pointer-events: none;
+
+        &--bar {
+            background-color: $color-red-dark;
+            width: 0%;
+            display: block;
+            height: .4rem;
+        }
+    }
+}
+
+#link--active {
+    color: $color-red-light;
+}
