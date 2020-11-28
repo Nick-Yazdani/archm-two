@@ -26,9 +26,9 @@ const Home = () => {
                     <span className="section-services__heading--text block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic deleniti quia repellat, pariatur id esse quae nisi.</span>
                 </h3>
                 <div className="section-services__container">
-                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Lorem ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet fuga non, eligendi quidem, deserunt iste autem, explicabo sequi tempora eum!" />
-                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Lorem ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet fuga non, eligendi quidem, deserunt iste autem, explicabo sequi tempora eum!" />
-                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Lorem ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet fuga non, eligendi quidem, deserunt iste autem, explicabo sequi tempora eum!" />
+                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet." />
+                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet." />
+                    <Card image={CardImage} alt="Photo of an automobile engine" heading="Ipsum dolor" text="Iste, asperiores nisi? Quaerat incidunt ullam veritatis repellendus odio quas eveniet." />
                 </div>
             </section>
             <section className="section-middle">
@@ -41,7 +41,7 @@ const Home = () => {
             </section>
             <section className="section-last">
                 <div className="section-last__container">
-                    <div className="section-last__container--column w-50">
+                    <div className="section-last__container--column">
                         <ul className="section-last__container--column--list">
                             <li className="section-last__container--column--list--title">Title</li>
                             <li className="section-last__container--column--list--item">Item One</li>
@@ -52,7 +52,7 @@ const Home = () => {
                         </ul>
                         <Link to="#" className="btn btn--red" style={{fontSize: "1.3rem"}}>Read More</Link>
                     </div>
-                    <div className="section-last__container--column w-50">
+                    <div className="section-last__container--column">
                         <img src={ListImage} className="section-last__container--column--image" alt="Another cool car engine" />
                         <span className="section-last__container--column--overlay">This is the text that will appear over the image when somebody hovers over it.</span>
                     </div>

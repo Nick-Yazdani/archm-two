@@ -3,15 +3,18 @@
         background: linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.8)), url('../../pages/About/images/about.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
+        height: 80rem;
         overflow: hidden;
+        position: relative;
         &--heading {
+            padding: 15rem;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             color: $color-white;
+            width: 100%;
             &-caption {
                 font-size: 7rem;
             }
@@ -26,7 +29,7 @@
     background-color: rgba($color-black, 0.9);
     color: $color-white;
     &__container {
-        margin: 0 30rem;
+        margin: 0 20rem;
         padding: 10rem;
         &--heading {
             font-size: 4rem;

@@ -1,7 +1,7 @@
 .contact-section {
     &-container {
         background-color: $color-grey;
-        height: 140vh;
+        height: 140rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,6 +20,7 @@
                     padding: 1rem;
                 }
                 &--input-control {
+                    width: 100%;
                     margin-top: 2rem;
                     display: flex;
                     &--input:not(:last-child){
@@ -32,6 +33,7 @@
                         outline: none;
                         border: none;
                         font-size: 1.6rem;
+                        width: 33.33%;
                         &::placeholder {
                             font-family: 'Montserrat', sans-serif;
                         }
@@ -45,6 +47,7 @@
                         border: none;
                         font-size: 1.6rem;
                         resize: none;
+                        width: 100%;
 
                         &::placeholder {
                             font-family: 'Montserrat', sans-serif;

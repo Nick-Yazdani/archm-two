@@ -1,6 +1,9 @@
 .card {
-    padding: 5rem;
     transition: all .3s;
+    margin-bottom: 3rem;
+    &:not(:last-child) {
+        margin-right: 5rem;
+    }
     &:hover {
         transform: translateY(-5rem);
     }
