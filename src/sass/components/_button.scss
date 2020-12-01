@@ -6,6 +6,7 @@
     display: inline-block;
     transition: all 0.3s;
     position: relative;
+    text-transform: uppercase;
 
     &:active {
         transform: translateY(5px);

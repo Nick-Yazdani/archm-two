@@ -1,9 +1,8 @@
-import React from 'react';
-import Layout from '../../components/Layout/Layout';
+import React, { Fragment } from 'react';
 
 const Contact = () => {
     return (
-        <Layout>
+        <Fragment>
             <section className="contact-section">
                 <div className="contact-section-container">
                     <div className="contact-section-container__sub">
@@ -37,7 +36,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </Fragment>
     )
 }
 

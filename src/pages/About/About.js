@@ -1,9 +1,8 @@
-import React from 'react';
-import Layout from '../../components/Layout/Layout';
+import React, { Fragment } from 'react';
 
 const About = () => {
     return (
-        <Layout>
+        <Fragment>
             <section className="section-about">
                 <div className="section-about__overlay">
                     <h1 className="section-about__overlay--heading">
@@ -20,7 +19,7 @@ const About = () => {
                     <p className="section-details__container--paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae nisi, modi, nam vitae ipsam ea in quod atque nulla voluptas enim. Quidem placeat eum dolorum animi voluptas eos architecto excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, nisi error. Vitae cupiditate ipsum quas fuga laboriosam voluptatibus libero, quisquam obcaecati neque, excepturi repudiandae, ut quia eius debitis! Iste, earum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, enim maxime? Quas quis obcaecati consectetur asperiores fugit blanditiis odit porro expedita ad ratione! Repellendus dolor architecto delectus? Esse, pariatur sequi?</p>
                 </div>
             </section>
-        </Layout>
+        </Fragment>
     )
 }
 

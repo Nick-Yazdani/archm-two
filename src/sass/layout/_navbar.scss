@@ -5,7 +5,9 @@
     width: 100%;
     transition: background 0.7s;
     z-index: 9999;
+
     &-nav {
+
         margin: 0 auto;
         display: flex;
         width: 90%;
@@ -14,6 +16,9 @@
         align-items: center;
         &__logo {
             width: 30%;
+            @include respond(tab-land) {
+                width: 100%;
+            }
               &--text {
                   display: inline-block;
                   font-size: 3rem;
@@ -79,7 +84,44 @@
                         }
                     }
                 }
+                @include respond(laptop-small) {
+                    display: none;
+                }
             }
+            @include respond(laptop-small) {
+                width: auto;
+            }
+        }
+
+
+        &-hamburger {
+            cursor: pointer;
+            display: none;
+            transition: all 0.4s;
+
+
+            @include respond(laptop-small) {
+                display: block;
+            }
+
+            &__line {
+                background-color: $color-white;
+                height: 3px;
+                width: 4rem;
+                border: 1px solid white;
+                border-radius: 500rem;
+                display: block;
+                &:not(:last-child) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &--rotated {
+            transform: rotate(90deg);
+        }
+        &--straight {
+            transform: rotate(0deg);
         }
     }
     &-progress__container {
@@ -95,6 +137,43 @@
             width: 0%;
             display: block;
             height: .4rem;
+        }
+    }
+    &-dropdown {
+        opacity: 0;
+        text-align: center;
+        width: 100%;
+
+        @include respond(laptop-small) {
+            opacity: 1;
+
+        }
+        &-container__list {
+            background-color: rgba($color-black, .6);
+
+            &--item {
+                font-size: 2.4rem;
+                padding: 1rem;
+                &--link {
+                    pointer-events: none;
+                    text-decoration: none;
+                    color: white;
+                    @include respond(laptop-small) {
+                        pointer-events: all;
+
+                    }
+                }
+            }
+        }
+        &--fade {
+            opacity: 1;
+            transition: all 0.4s;
+
+        }
+        &--hidden {
+            opacity: 0;
+            transition: all 0.4s;
+
         }
     }
 }
