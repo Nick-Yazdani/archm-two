@@ -19,6 +19,7 @@ const Home = () => {
             .then(res => {
                 setFirstSplashPage(res.acf)
                 setTitle(res.title.rendered)
+                console.log(title)
             })
     }, [])
 
