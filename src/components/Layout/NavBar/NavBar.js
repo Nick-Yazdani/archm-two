@@ -21,7 +21,7 @@ const NavBar = ({ history }) => {
     }, [])
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/navigation/60')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/navigation/60')
             .then(res => res.json())
             .then(res => {
                 setNavItems(res.acf)

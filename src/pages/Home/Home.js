@@ -14,7 +14,7 @@ const Home = () => {
     const [title, setTitle] = useState({});
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/splash-page/19')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/splash-page/19')
             .then(res => res.json())
             .then(res => {
                 setFirstSplashPage(res.acf)
@@ -23,7 +23,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/splash-page/28')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/splash-page/28')
             .then(res => res.json())
             .then(res => {
                 setSecondSplashPage(res.acf)
@@ -31,7 +31,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/section/34')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/section/34')
             .then(res => res.json())
             .then(res => {
                 setCardSection(res.acf)
@@ -39,7 +39,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/card')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/card')
             .then(res => res.json())
             .then(res => {
                 setCards(res)
@@ -47,7 +47,7 @@ const Home = () => {
     }, [])
 
     useEffect(() => {
-        fetch('http://www.wpbuild.archm.com.au/wp-json/wp/v2/feature-box/53')
+        fetch('https://www.wpbuild.archm.com.au/wp-json/wp/v2/feature-box/53')
             .then(res => res.json())
             .then(res => {
                 setFeatureBox(res.acf)
