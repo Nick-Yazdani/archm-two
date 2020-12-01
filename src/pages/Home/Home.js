@@ -19,7 +19,6 @@ const Home = () => {
             .then(res => {
                 setFirstSplashPage(res.acf)
                 setTitle(res.title.rendered)
-                console.log(title)
             })
     }, [])
 
@@ -55,6 +54,7 @@ const Home = () => {
             })
     }, [])
 
+    console.log(title)
     return (
         <Fragment>
             <section className="section-main">
