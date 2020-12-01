@@ -140,17 +140,17 @@
         }
     }
     &-dropdown {
-        opacity: 0;
+        display: none;
         text-align: center;
         width: 100%;
 
         @include respond(laptop-small) {
-            opacity: 1;
+            display: block;
 
         }
         &-container__list {
             background-color: rgba($color-black, .6);
-
+            list-style: none;
             &--item {
                 font-size: 2.4rem;
                 padding: 1rem;
@@ -167,12 +167,14 @@
         }
         &--fade {
             opacity: 1;
+            transform: translateX(0rem);
             transition: all 0.4s;
 
         }
         &--hidden {
             opacity: 0;
             transition: all 0.4s;
+            transform: translateX(100rem);
 
         }
     }
